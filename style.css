@@ -1,0 +1,132 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Sour Gummy', sans-serif; /* Pastikan font hanya diterapkan di seluruh body */
+  background: linear-gradient(to bottom, #1e2a47, #3b1c8f); /* Latar belakang luar angkasa */
+  color: white;
+  overflow: hidden;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+}
+
+.book {
+  width: 90%;
+  max-width: 800px;
+  height: 500px;
+  perspective: 1000px;
+  position: relative;
+}
+
+.page {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transform-origin: right center;
+  transform: rotateY(90deg);
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  opacity: 0;
+  transition: transform 1s ease, opacity 1s ease;
+}
+
+.page.active {
+  transform: rotateY(0deg);
+  opacity: 1;
+}
+
+h1, h2 {
+  font-size: 2.5em;
+  margin: 10px 0;
+  color: #fff;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+p {
+  font-size: 1.2em;
+  line-height: 1.6em;
+  margin: 20px 0;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+  font-family: 'Sour Gummy', sans-serif; /* Pastikan font teks di dalam paragraf tetap mengikuti font yang benar */
+}
+
+/* Animasi */
+.fade-in {
+  animation: fadeIn 1.5s ease forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.typing-text {
+  font-family: 'Sour Gummy', sans-serif;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* Gambar */
+.profile-pic {
+  width: 150px;
+  height: auto;
+  margin: 20px 0;
+  border-radius: 50%;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Tombol */
+.next-button {
+  background-color: white;
+  color: rebeccapurple;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+}
+
+.next-button:hover {
+  background-color: pink;
+  transform: scale(1.1);
+}
+
+.music {
+  margin-top: 20px;
+  width: 100%;
+}
+
+/* Latar belakang luar angkasa */
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('https://www.nasa.gov/sites/default/files/thumbnails/image/nasa-earth-captured.jpg') center center / cover no-repeat;
+  opacity: 0.3;
+}
