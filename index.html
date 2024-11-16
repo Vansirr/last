@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kartu Ulang Tahun</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="book">
+    <div class="page page-1 active">
+      <div class="content">
+        <h1>Hallo Indri!</h1>
+        <p class="intro-text">Hari ini adalah hari yang sangat spesial buat mu. Klik  play pada lagu terus klik tombol di bawah untuk memulai perjalanan ulang tahun yang seru!</p>
+        <img src="https://i.pinimg.com/736x/ee/36/fc/ee36fce761d4176062f645c635a5ec59.jpg" 
+             alt="Indri" class="profile-pic fade-in">
+        <audio controls autoplay loop class="music">
+          <source src="music/wildflower.mp3" type="audio/mpeg">
+          Browser kamu tidak mendukung pemutar musik.
+        </audio>
+        <button class="next-button bounce" onclick="goToPage(2)">Mulai 🎉</button>
+      </div>
+    </div>
+
+    <div class="page page-2">
+      <div class="content">
+        <h2 class="fade-in">Selamat Ulang Tahun! 🎂</h2>
+        <p class="typing-text">
+          Hari ini adalah hari yang penuh kebahagiaan! Semoga kamu selalu dikelilingi uang, kebahagiaan, dan banyak tawa.
+          <br><br>
+          <em>"Setiap ada masalah pasti ada jalan keluar."</em> Doa dari ku semoga panjang umur, sehat selalu, makin pinter biar kam ga dongo dongo amat dan terakhir jangan lupa untuk selalu tersenyum!
+        </p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnZ1cq8Ak-NHPZrc9v814po23rhV0qMsonIg&s" 
+             alt="Indri" class="profile-pic fade-in">
+        <button class="next-button bounce" onclick="goToPage(3)">Lanjut ➡️</button>
+      </div>
+    </div>
+
+    <div class="page page-3">
+      <div class="content">
+        <h2 class="fade-in">Pesan dari Temanmu! 📝</h2>
+        <p class="typing-text">
+          Indri, pesan aku sih jangan terlalu nolep. Dan lebih hati-hati lagi kalau mau posting sesuatu, soalnya bisa-bisa aku nggak bisa berhenti memuji kamu saking cantiknya. Kamu itu kayak matahari, selalu bikin hari-hari aku lebih terang, tapi kadang aku mikir, jangan-jangan kamu tuh sengaja bikin semua orang nggak bisa move on!
+        </p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN-KqhBB0dfLGiBt8QgTHkv251HPLVuxqs5g&s" 
+             alt="Pesan Teman" class="profile-pic rotate">
+        <button class="next-button bounce" onclick="goToPage(4)">Lanjutkan ➡️</button>
+      </div>
+    </div>
+
+    <div class="page page-4">
+      <div class="content">
+        <h2 class="fade-in">Dengerin lagu nya yach</h2>
+        <p class="typing-text">
+           Btw maaf ya di halaman sebelumnya aku pake foto Choi Jeongmin karna ga ada foto kam kocag (pls sering sering kasih aku pap). Btw aku pake foto Choi Jeongmin karna mirip kam bejir. Sekali lagi selamat ulang tahun Indri! Jangan lupa untuk menikmati setiap momen hari ini. Hadiah ku nyusul ya! 🎁
+        </p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkQqaRGCR3hFkMHEd0U5S2NgTAvxTxPToS_Q&s" 
+               alt="Indri" class="profile-pic fade-in">
+        <button class="next-button bounce" onclick="goToPage(5)">Lanjutkan 🌟</button>
+      </div>
+    </div>
+
+    <div class="page page-5">
+      <div class="content">
+        <h2 class="fade-in">Sampai Jumpa Lagi! </h2>
+        <p class="typing-text">Semoga hari ini menjadi hari yang penuh kebahagiaan. Sampai jumpa di kejutan berikutnya! 🎉</p>
+        <button class="next-button bounce" onclick="goToPage(1)">Ulangi 🔄</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
